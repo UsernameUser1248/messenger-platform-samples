@@ -1,3 +1,5 @@
+PAGE_ACCESS_TOKEN="EAAEFcINoNwcBAA9TrsbmwCSY1LEo4GPvkAS1pY0Tcw3M7ArN65iFbcgNuE6BgEGdRCBFtYXV7ab3lBRpWWVclAszGkWENX6jDEbZAVcZCEVU9nDhRF8oS8imdQW5RQfZCz8pwSuPZABdZBjCaUIEfWD5NDp7lkQMeqZBR4fI0VwwZDZD"
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 
 /**
  * Copyright 2017-present, Facebook, Inc. All rights reserved.
@@ -76,7 +78,7 @@ app.post('/webhook', (req, res) => {
 app.get('/webhook', (req, res) => {
   
   /** UPDATE YOUR VERIFY TOKEN **/
-  const VERIFY_TOKEN = "<YOUR VERIFY TOKEN>";
+  const VERIFY_TOKEN = "EAAEFcINoNwcBAA9TrsbmwCSY1LEo4GPvkAS1pY0Tcw3M7ArN65iFbcgNuE6BgEGdRCBFtYXV7ab3lBRpWWVclAszGkWENX6jDEbZAVcZCEVU9nDhRF8oS8imdQW5RQfZCz8pwSuPZABdZBjCaUIEfWD5NDp7lkQMeqZBR4fI0VwwZDZD";
   
   // Parse params from the webhook verification request
   let mode = req.query['hub.mode'];
